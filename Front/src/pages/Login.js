@@ -59,13 +59,3 @@ const Login = () => {
 
 // Exporta la función `Login` como el valor predeterminado del módulo
 export default Login
-const logout = () => {
-  // Elimina la información del usuario del localStorage
-  localStorage.removeItem('user')
-
-  // Opcional: Actualiza la interfaz para reflejar que ya no hay usuario logueado
-  // Por ejemplo, puedes redirigir al login o recargar la página
-  // window.location.reload();
-  // O, si usas tus funciones de navegación:
-  Login() // Si ya tienes importada la función Login para mostrar el formulario de login
-}
